@@ -1,0 +1,52 @@
+module.exports = {
+  plugins: ['jest'],
+  overrides: [
+    {
+      files: [
+        'packages/*/tests/**/*.spec.ts',
+        'packages/*/tests/**/*.test.ts',
+        'packages/*/tests/**/spec.ts',
+        'packages/*/tests/**/test.ts',
+        'packages/parser/tests/**/*.ts',
+        'tests/integration/**/*.test.ts',
+        'tests/integration/integration-test-base.ts',
+        'tests/integration/pack-packages.ts',
+      ],
+      env: {
+        'jest/globals': true,
+      },
+      rules: {
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
+        'eslint-plugin/no-identical-tests': 'error',
+        'jest/no-disabled-tests': 'warn',
+        'jest/no-focused-tests': 'error',
+        'jest/no-alias-methods': 'error',
+        'jest/no-identical-title': 'error',
+        'jest/no-jasmine-globals': 'error',
+        'jest/no-jest-import': 'error',
+        'jest/no-test-prefixes': 'error',
+        'jest/no-done-callback': 'error',
+        'jest/no-test-return-statement': 'error',
+        'jest/prefer-to-be': 'warn',
+        'jest/prefer-to-contain': 'warn',
+        'jest/prefer-to-have-length': 'warn',
+        'jest/prefer-spy-on': 'error',
+        'jest/valid-expect': 'error',
+        'jest/no-deprecated-functions': 'error',
+      },
+    },
+    {
+      files: ['tests/**/*.js'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
+        '@typescript-eslint/restrict-plus-operands': 'off',
+      },
+    },
+  ],
+};
