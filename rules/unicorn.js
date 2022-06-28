@@ -9,11 +9,11 @@ module.exports = {
   plugins: ['unicorn'],
   extends: ['plugin:unicorn/recommended'],
   rules: {
-    ['unicorn/prefer-module']: 'off',
-    ['unicorn/better-regex']: 'error',
-    ['unicorn/catch-error-name']: 'error',
-    ['unicorn/no-array-for-each']: 'off',
-    ['unicorn/no-null']: 'off',
+    'unicorn/prefer-module': 'off',
+    'unicorn/better-regex': 'error',
+    'unicorn/catch-error-name': 'error',
+    'unicorn/no-array-for-each': 'off',
+    'unicorn/no-null': 'off',
     'unicorn/numeric-separators-style': [
       'error',
       {
@@ -23,5 +23,14 @@ module.exports = {
         },
       },
     ],
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+      }
+    ]
   },
 };
