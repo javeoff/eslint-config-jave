@@ -1,23 +1,23 @@
 module.exports = {
   rules: {
-    ['array-bracket-spacing']: ['error', 'never'],
-    ['brace-style']: ['error'],
-    ['comma-spacing']: ['error', { before: false, after: true }],
-    ['func-names']: ['off'],
-    ['key-spacing']: [
+    'array-bracket-spacing': ['error', 'never'],
+    'brace-style': ['error'],
+    'comma-spacing': ['error', { before: false, after: true }],
+    'func-names': ['off'],
+    'key-spacing': [
       'error',
       {
         afterColon: true,
       },
     ],
-    ['space-infix-ops']: 'error',
-    ['space-unary-ops']: [
+    'space-infix-ops': 'error',
+    'space-unary-ops': [
       'error',
       {
         nonwords: false,
       },
     ],
-    ['keyword-spacing']: [
+    'keyword-spacing': [
       'error',
       {
         before: true,
@@ -29,7 +29,7 @@ module.exports = {
         },
       },
     ],
-    ['max-len']: [
+    'max-len': [
       'error',
       {
         code: 100,
@@ -42,16 +42,16 @@ module.exports = {
         ignoreUrls: true,
       },
     ],
-    ['newline-per-chained-call']: [
+    'newline-per-chained-call': [
       'error',
       {
         ignoreChainWithDepth: 2,
       },
     ],
-    ['no-continue']: 'off',
-    ['no-plusplus']: 'off',
-    ['no-bitwise']: 'off',
-    ['no-mixed-operators']: [
+    'no-continue': 'off',
+    'no-plusplus': 'off',
+    'no-bitwise': 'off',
+    'no-mixed-operators': [
       'error',
       {
         groups: [
@@ -62,13 +62,13 @@ module.exports = {
         allowSamePrecedence: false,
       },
     ],
-    ['no-restricted-syntax']: ['error', 'WithStatement'],
-    ['no-tabs']: 'off',
-    ['no-underscore-dangle']: 'off',
-    ['one-var']: ['error', 'never'],
-    ['operator-linebreak']: ['error', 'after'],
-    ['padded-blocks']: ['error', 'never'],
-    ['padding-line-between-statements']: [
+    'no-restricted-syntax': ['error', 'WithStatement'],
+    'no-tabs': 'off',
+    'no-underscore-dangle': 'off',
+    'one-var': ['error', 'never'],
+    'operator-linebreak': ['error', 'after'],
+    'padded-blocks': ['error', 'never'],
+    'padding-line-between-statements': [
       'error',
       { blankLine: 'any', prev: '*', next: 'return' },
       { blankLine: 'always', prev: ['const', 'let'], next: '*' },
@@ -76,20 +76,12 @@ module.exports = {
       { blankLine: 'always', prev: 'directive', next: '*' },
       { blankLine: 'never', prev: 'directive', next: 'directive' },
     ],
-    ['quote-props']: [
+    'quote-props': [
       'error',
       'as-needed',
       { keywords: false, unnecessary: false, numbers: false },
     ],
-    ['quotes']: [
-      'error',
-      'single',
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
-    ],
-    ['semi-spacing']: ['error', { before: false, after: true }],
-    ['space-before-blocks']: 'error',
+    'semi-spacing': ['error', { before: false, after: true }],
+    'space-before-blocks': 'error',
   },
 };
