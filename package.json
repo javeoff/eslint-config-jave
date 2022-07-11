@@ -2,7 +2,7 @@
   "name": "eslint-config-jave",
   "version": "1.0.0",
   "description": "ESLint configuration for the Jave's projects",
-  "main": "index.js",
+  "main": "eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,18 +18,20 @@
   },
   "homepage": "https://github.com/javeoff/eslint-config-jave#readme",
   "devDependencies": {
-    "eslint": "^8.5.0",
+    "eslint": "^8.19.0",
+    "eslint-import-resolver-typescript": "^3.2.5",
     "prettier": "^2.5.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "@putout/plugin-remove-useless-spread": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-putout": "^15.8.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-unicorn": "^42.0.0"
   },
