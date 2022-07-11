@@ -14,6 +14,9 @@ module.exports = {
     'unicorn/catch-error-name': 'error',
     'unicorn/no-array-for-each': 'off',
     'unicorn/no-null': 'off',
+    'unicorn/prevent-abbreviations': 'off',
+    'unicorn/prefer-spread': 'off',
+    'unicorn/no-nested-ternary': 'off',
     'unicorn/numeric-separators-style': [
       'error',
       {

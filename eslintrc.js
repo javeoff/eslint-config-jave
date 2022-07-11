@@ -11,5 +11,12 @@ module.exports = {
     './rules/variables',
     './rules/styleguide',
     './rules/eslint-comments',
-  ].map(element => require.resolve(element)),
+    // './rules/putout',
+  ].map(function(element) {
+    return require.resolve(element);
+  }),
+  ecmaFeatures: {
+    jsx: true,
+    modules: true
+  }
 };

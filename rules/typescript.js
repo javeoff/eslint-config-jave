@@ -23,53 +23,53 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
       ],
       rules: {
-        ['@typescript-eslint/method-signature-style']: ['error', 'method'],
-        ['@typescript-eslint/naming-convention']: [
-          'error',
-          {
-            custom: {
-              match: true,
-              regex: '^I[A-Z]',
-            },
-            format: ['PascalCase'],
-            selector: ['interface'],
-          },
-          {
-            custom: {
-              match: true,
-              regex: '^[TI][A-Z]',
-            },
-            format: ['PascalCase'],
-            selector: ['typeAlias'],
-          },
-        ],
-        ['@typescript-eslint/explicit-module-boundary-types']: ['error'],
-        ['@typescript-eslint/explicit-member-accessibility']: ['error'],
-        ['@typescript-eslint/explicit-function-return-type']: [
+        '@typescript-eslint/method-signature-style': ['error', 'method'],
+        // ['@typescript-eslint/naming-convention']: [
+        //   'error',
+        //   {
+        //     custom: {
+        //       match: true,
+        //       regex: '^I[A-Z]',
+        //     },
+        //     format: ['PascalCase'],
+        //     selector: ['interface'],
+        //   },
+        //   {
+        //     custom: {
+        //       match: true,
+        //       regex: '^[TI][A-Z]',
+        //     },
+        //     format: ['PascalCase'],
+        //     selector: ['typeAlias'],
+        //   },
+        // ],
+        '@typescript-eslint/explicit-module-boundary-types': ['error'],
+        '@typescript-eslint/explicit-member-accessibility': ['error'],
+        '@typescript-eslint/explicit-function-return-type': [
           'error',
           {
             allowDirectConstAssertionInArrowFunctions: true,
             allowExpressions: true,
           },
         ],
-        ['@typescript-eslint/array-type']: [
+        '@typescript-eslint/array-type': [
           'error',
           {
             default: 'array-simple',
             readonly: 'array-simple',
           },
         ],
-        ['@typescript-eslint/no-floating-promises']: [
+        "@typescript-eslint/no-floating-promises": [
           'error',
           {
             ignoreIIFE: true,
             ignoreVoid: true,
           },
         ],
-        ['@typescript-eslint/no-unsafe-assignment']: 'off',
-        ['@typescript-eslint/no-unused-vars']: 'error',
-        ['@typescript-eslint/no-use-before-define']: 'off',
-        ['@typescript-eslint/unbound-method']: 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/unbound-method': 'off',
       },
     },
   ],

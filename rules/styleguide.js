@@ -66,7 +66,6 @@ module.exports = {
     'no-tabs': 'off',
     'no-underscore-dangle': 'off',
     'one-var': ['error', 'never'],
-    'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': [
       'error',
