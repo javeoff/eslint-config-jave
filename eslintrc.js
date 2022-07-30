@@ -18,5 +18,13 @@ module.exports = {
   ecmaFeatures: {
     jsx: true,
     modules: true
-  }
+  },
+  ignorePatterns: [
+    'dist',
+    'public',
+    'var',
+    '__migration__',
+    '.eslintrc.json',
+    'node_modules',
+  ],
 };
