@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jave",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "ESLint configuration for the Jave's projects",
   "main": "eslintrc.js",
   "scripts": {
