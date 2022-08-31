@@ -11,6 +11,17 @@ module.exports = {
     project: './tsconfig.json',
     sourceType: 'module',
   },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      [require.resolve('eslint-import-resolver-typescript')]: true,
+    },
+    react: {
+      version: 'detect',
+    },
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
