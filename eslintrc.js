@@ -15,10 +15,6 @@ module.exports = {
   ].map(function(element) {
     return require.resolve(element);
   }),
-  ecmaFeatures: {
-    jsx: true,
-    modules: true
-  },
   ignorePatterns: [
     'dist',
     'public',
@@ -26,5 +22,8 @@ module.exports = {
     '__migration__',
     '.eslintrc.json',
     'node_modules',
+    "package-lock.json",
+    "package.json",
+    "tsconfig.json"
   ],
 };
